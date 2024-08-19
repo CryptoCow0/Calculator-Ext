@@ -1,95 +1,131 @@
+Here’s the README in Markdown format:
+
+```markdown
 # Calculator-Ext
-A calculator extension for Chrome
 
+**Calculator-Ext** is a powerful Chrome extension that provides an extensive range of mathematical operations, functions, and utilities. Whether you need basic arithmetic, advanced functions, or custom macros, this extension has you covered.
 
-# Features
+## Features
 
-## Operators
-| Operator | Name                |
-|----------|---------------------|
-|    \+    | Add                 |
-|    \-    | Subtract            |
-|    \*    | Multiply            |
-|    /     | Divide              |
-|    %     | Modulus             |
-|    ^     | Exponent            |
-|    !     | Factorial           |
-|    E     | Scientific Notation |
+### Operators
 
-## Constants
+Perform fundamental operations with ease:
+| Operator | Function             |
+|----------|----------------------|
+|    \+    | Addition             |
+|    \-    | Subtraction          |
+|    \*    | Multiplication       |
+|    /     | Division             |
+|    %     | Modulus              |
+|    ^     | Exponentiation       |
+|    !     | Factorial            |
+|    E     | Scientific Notation  |
+
+### Constants
+
+Reference mathematical constants quickly:
 | Constant | Value        |
 |----------|--------------|
-|    pi    | 3.1415926536 |
+|    π     | 3.1415926536 |
 |    e     | 2.7182818285 |
 
-## Functions
+### Functions
 
 #### abs(x)
-Absolute value of `x`
+- **Description:** Returns the absolute value of `x`.
+
 #### rand([max])
 #### rand([min, max])
-Generate a random number, `min` and `max` are optional. If only `max` is given, `min` is assumed to be `0`
+- **Description:** Generates a random number. If only `max` is provided, `min` defaults to `0`.
+
 #### sum(...nums)
-Sum multiple numbers
+- **Description:** Returns the sum of multiple numbers.
+
 #### sumrange(start, stop)
-Sum a range of numbers, inclusive
+- **Description:** Returns the sum of a range of numbers, inclusive.
+
 #### sqrt(x)
-Square root of `x`
+- **Description:** Returns the square root of `x`.
+
 #### cbrt(x)
-Cube root of `x`
+- **Description:** Returns the cube root of `x`.
+
 #### root(val, root)
-Calculates an arbitrary root of `val`
+- **Description:** Calculates an arbitrary root of `val`.
+
 #### floor(x)
-Round `x` down to the nearest integer
+- **Description:** Rounds `x` down to the nearest integer.
+
 #### round(x)
-Round `x` to the nearest integer (`.5` is rounded up)
+- **Description:** Rounds `x` to the nearest integer (`.5` is rounded up).
+
 #### ceil(x)
-Round `x` up to the nearest integer
+- **Description:** Rounds `x` up to the nearest integer.
+
 #### trunc(x[, decimals])
-Truncate `x` to the amount of decimal places determined by `decimals` (default: `0`)
+- **Description:** Truncates `x` to the number of decimal places determined by `decimals` (default: `0`).
+
 #### sin(x) / asin(x)
-Sine and Arcsine (also written as <code>sin<sup>-1</sup>(x)</code>)
+- **Description:** Returns the sine and arcsine (also written as <code>sin<sup>-1</sup>(x)</code>) of `x`.
+
 #### cos(x) / acos(x)
-Cosine and Arccosine (also written as <code>cos<sup>-1</sup>(x)</code>)
+- **Description:** Returns the cosine and arccosine (also written as <code>cos<sup>-1</sup>(x)</code>) of `x`.
+
 #### tan(x) / atan(x)
-Tangent and Arctangent (also written as <code>tan<sup>-1</sup>(x)</code>)
+- **Description:** Returns the tangent and arctangent (also written as <code>tan<sup>-1</sup>(x)</code>) of `x`.
+
 #### log(x)
-Logarithm base 10 of `x`
+- **Description:** Returns the logarithm base 10 of `x`.
+
 #### ln(x)
-Logarithm base `e` of `x`
+- **Description:** Returns the logarithm base `e` of `x`.
+
 #### isprime(x)
-Returns `1` if `x` is prime, and `0` if `x` is not prime
+- **Description:** Returns `1` if `x` is prime, and `0` if `x` is not prime.
+
 #### gcd(num, den)
 #### gcf(num, den)
-Returns the greatest common divisor (factor) of two numbers. Returns `0` if either number is not an integer
+- **Description:** Returns the greatest common divisor (factor) of two numbers. Returns `0` if either number is not an integer.
 
-## Macros
+### Macros
 
 #### hex(value)
-Convert `value` from hexadecimal (base 16) to decimal (base 10)
+- **Description:** Converts `value` from hexadecimal (base 16) to decimal (base 10).
+
 #### oct(value)
-Convert `value` from octal (base 8) to decimal (base 10)
+- **Description:** Converts `value` from octal (base 8) to decimal (base 10).
+
 #### bin(value)
-Convert `value` from binary (base 2) to decimal (base 10)
+- **Description:** Converts `value` from binary (base 2) to decimal (base 10).
+
 #### convert(value from_unit, to_unit)
 #### convert(value from_unit ["as" | "to" | "in"] to_unit)
-Converts `value` from `from_unit` to `to_unit`
+- **Description:** Converts `value` from `from_unit` to `to_unit`.
+
 #### range(start, stop[, step])
-Creates a list that spans from `start` to `stop`, with an optional `step` size (default: `1`)
+- **Description:** Creates a list that spans from `start` to `stop`, with an optional `step` size (default: `1`).
+
 #### f(variable, equation, start, stop[, step])
-Compute `equation` for each value of `variable` as defined by the range [`start`, `stop`] with an optional `step` size (default: `1`)
+- **Description:** Computes `equation` for each value of `variable` as defined by the range [`start`, `stop`] with an optional `step` size (default: `1`).
 
 ### Expressions
- - Multiple expressions can be separated by using commas (,) in the input field.
-   - Ex: `1 + 2, 3 - 5` = `3, -2`
- - Each expression is evaluated separately, and displayed in their respective order after being evaluated. Definition expressions (Ex. `x = 4`) are not displayed as output.
+
+- Multiple expressions can be separated by commas (`,`).
+  - **Example:** `1 + 2, 3 - 5` yields `3, -2`.
+- Each expression is evaluated separately, and results are displayed in the same order.
+- Variable definitions (e.g., `x = 4`) are not shown as output.
 
 ### Variables
- - Supports arbitrary variable names (all lowercase, must not collide with constants or operators)
- - A variable definition is an expression that starts with a variable name, an equals sign, followed by an evaluable expression (Ex. `x = 4`, or `myvar = 5 + 6`)
- - Variables can be defined before or after an expression (Ex. `x = 2, 3x` and `3x, x = 2` are both valid)
- - Variables definitions that rely on each other must be defined in order (Ex. `x = 2, y = 5 - x` is valid, but `y = 5 - x, x = 2` is not valid)
+
+- Supports arbitrary variable names (lowercase, must not collide with constants or operators).
+- A variable definition starts with a variable name, followed by an equals sign, and an evaluable expression (e.g., `x = 4`, `myvar = 5 + 6`).
+- Variables can be defined before or after an expression (e.g., `x = 2, 3x` and `3x, x = 2` are both valid).
+- Variables that depend on each other must be defined in order (e.g., `x = 2, y = 5 - x` is valid, but `y = 5 - x, x = 2` is not).
 
 ### Other
- - Supports both degree (Deg) and radian (Rad) modes
- - Keeps track of the last 25 calculations and results
+
+- Supports both degree (Deg) and radian (Rad) modes.
+- Keeps track of the last 25 calculations and results.
+```
+
+You can copy this Markdown directly into your README file.
