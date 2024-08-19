@@ -1,6 +1,4 @@
-Here’s the README in Markdown format:
 
-```markdown
 # Calculator-Ext
 
 **Calculator-Ext** is a powerful Chrome extension that provides an extensive range of mathematical operations, functions, and utilities. Whether you need basic arithmetic, advanced functions, or custom macros, this extension has you covered.
